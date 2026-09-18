@@ -32,7 +32,7 @@ export default function About() {
   const headingRef = useRef<HTMLHeadingElement>(null);
   const highlightBgRef = useRef<HTMLSpanElement>(null);
   const paragraphRef = useRef<HTMLParagraphElement>(null);
-  const buttonRef = useRef<HTMLButtonElement>(null);
+  const buttonRef = useRef<HTMLAnchorElement>(null);
 
   const gridRef = useRef<HTMLDivElement>(null);
   const linePathRef = useRef<SVGPathElement>(null);
@@ -610,13 +610,15 @@ export default function About() {
             creating products that make a difference.
           </p>
 
-          <button
+          <a
             ref={buttonRef}
-            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 transition-colors text-white text-[14px] font-medium px-5 py-3 rounded-full"
+            href="/cv.pdf"
+            download="Akash-Khan-CV.pdf"
+            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 transition-colors text-white text-[14px] font-medium px-5 py-3 rounded-full"
           >
             Download CV
             <span aria-hidden>↓</span>
-          </button>
+          </a>
         </div>
 
         {/* =================================================

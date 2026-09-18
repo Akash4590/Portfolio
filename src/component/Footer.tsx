@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -158,7 +157,9 @@ export default function Footer() {
 
         <div ref={socialRef} className="flex items-center gap-4 text-gray-400">
           <a
-            href="#"
+            href="https://github.com/Akash4590"
+            target="_blank"
+            rel="noreferrer"
             aria-label="GitHub"
             className="footer-social-icon hover:text-white transition-colors"
             style={{ "--glow-color": "rgba(255,255,255,0.45)" } as React.CSSProperties}
@@ -166,7 +167,9 @@ export default function Footer() {
             <FaGithub size={16} />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/akashkhan-dev"
+            target="_blank"
+            rel="noreferrer"
             aria-label="LinkedIn"
             className="footer-social-icon hover:text-white transition-colors"
             style={{ "--glow-color": "rgba(56,189,248,0.55)" } as React.CSSProperties}
@@ -174,15 +177,9 @@ export default function Footer() {
             <FaLinkedin size={16} />
           </a>
           <a
-            href="#"
-            aria-label="Twitter"
-            className="footer-social-icon hover:text-white transition-colors"
-            style={{ "--glow-color": "rgba(255,255,255,0.45)" } as React.CSSProperties}
-          >
-            <FaXTwitter size={16} />
-          </a>
-          <a
-            href="#"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=akashjaved4590@gmail.com"
+            target="_blank"
+            rel="noreferrer"
             aria-label="Email"
             className="footer-social-icon hover:text-white transition-colors"
             style={{ "--glow-color": "rgba(96,165,250,0.55)" } as React.CSSProperties}

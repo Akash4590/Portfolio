@@ -411,14 +411,31 @@ export default function Hero() {
 
           {/* BUTTONS */}
           <div ref={buttonsRowRef} className="flex items-center gap-4 mb-8">
-            <button
-              ref={primaryBtnRef}
-              className="relative overflow-hidden isolate flex items-center gap-2 bg-blue-600 text-white text-[14px] font-medium px-5 py-3 rounded-full"
-            >
-              <span ref={primarySweepRef} className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-500 to-blue-400" />
-              View My Projects
-              <span ref={primaryArrowRef} aria-hidden className="inline-block will-change-transform">→</span>
-            </button>
+           <button
+  ref={primaryBtnRef}
+  onClick={() => {
+    document.getElementById("projects")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }}
+  className="relative overflow-hidden isolate flex items-center gap-2 bg-blue-600 text-white text-[14px] font-medium px-5 py-3 rounded-full cursor-pointer"
+>
+  <span
+    ref={primarySweepRef}
+    className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-500 to-blue-400"
+  />
+
+  View My Projects
+
+  <span
+    ref={primaryArrowRef}
+    aria-hidden
+    className="inline-block will-change-transform"
+  >
+    →
+  </span>
+</button>
 
             <button
               ref={secondaryBtnRef}

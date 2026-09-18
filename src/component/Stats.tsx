@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Users, FileCheck, Smile, Clock } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 

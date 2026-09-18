@@ -16,24 +16,32 @@ const projects = [
     desc: "A modern e-commerce platform with secure payments, real-time orders and admin dashboard.",
     tags: ["React", "Node.js", "MongoDB", "Stripe"],
     image: techgear,
+    githubUrl: "https://github.com/Akash4590/techgear-Ecommerce.git",
+    liveUrl: "https://techgear-ecommerce-gm4z.vercel.app",
   },
   {
     title: "Grow Rise Digital Agency",
     desc: "A digital marketing agency website with services, portfolio, blog and contact form.",
     tags: ["React", "TypeScript", "Tailwind"],
     image: growrise,
+    githubUrl: "https://github.com/Akash4590/Digital-agency.git",
+    liveUrl: "https://techgear-ecommerce-gm4z.vercel.app",
   },
   {
     title: "AI Leads",
     desc: "AI-powered lead generation platform with chatbot, dashboard and user management.",
     tags: ["React", "Node.js", "MongoDB", "n8n"],
     image: Aileads,
+    githubUrl: "https://github.com/Akash4590/Ai-leads-generation.git",
+    liveUrl: "https://techgear-ecommerce-gm4z.vercel.app",
   },
   {
     title: "Portfolio Website",
     desc: "This portfolio website you're viewing now. Built with React, TypeScript and Tailwind.",
     tags: ["React", "TypeScript", "Tailwind"],
     image: portfolio,
+    githubUrl: "https://github.com/Akash4590/Portfolio.git",
+    liveUrl: "https://techgear-ecommerce-gm4z.vercel.app",
   },
 ];
 
@@ -300,7 +308,9 @@ export default function Projects() {
                 {/* Project Links — settle in a touch on card hover */}
                 <div className="flex items-center gap-4 text-[12px] opacity-90 translate-y-0.5 transition-all duration-300 group-hover/card:opacity-100 group-hover/card:translate-y-0">
                   <a
-                    href="#"
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
                     className="group/live flex items-center gap-1 text-blue-400 hover:text-blue-300 transition-colors"
                   >
                     Live Demo
@@ -311,7 +321,9 @@ export default function Projects() {
                   </a>
 
                   <a
-                    href="#"
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noreferrer"
                     className="group/gh flex items-center gap-1 text-gray-400 hover:text-white transition-colors"
                   >
                     GitHub
