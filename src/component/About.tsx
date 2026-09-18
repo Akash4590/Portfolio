@@ -614,6 +614,15 @@ export default function About() {
             ref={buttonRef}
             href="/cv.pdf"
             download="Akash-Khan-CV.pdf"
+            onClick={(event) => {
+              event.preventDefault();
+              const downloadLink = document.createElement("a");
+              downloadLink.href = "/cv.pdf";
+              downloadLink.download = "Akash-Khan-CV.pdf";
+              document.body.appendChild(downloadLink);
+              downloadLink.click();
+              downloadLink.remove();
+            }}
             className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 transition-colors text-white text-[14px] font-medium px-5 py-3 rounded-full"
           >
             Download CV
